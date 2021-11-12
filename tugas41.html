@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>pilih warna background</p>
+    <select id="mySelect" onchange="myFunction()">
+    <option value="red">merah</option>
+    <option value="blue">biru</option>
+    <option value="yellow">kuning</option>
+    <option value="white">putih</option>
+</select>
+<p>saat kamu memilih warna background akan berubah</p>
+<script>
+    function myFunction(){
+        let a = document.getElementById("mySelect").value
+        document.body.style.backgroundColor=a
+    }
+</script>
+</body>
+</html>
